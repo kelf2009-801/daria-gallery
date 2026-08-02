@@ -35,7 +35,7 @@
     .site-bg {
       position: fixed;
       inset: 0;
-      z-index: -1;
+      z-index: 0;
       background-image: linear-gradient(180deg, rgba(11,11,15,0.6) 0%, rgba(11,11,15,0.85) 100%), url('images/IMG_20260227_211524.webp');
       background-size: cover;
       background-position: center top;
@@ -101,14 +101,12 @@
       left: 0;
       right: 0;
       z-index: 100;
-      padding: 28px 40px;
+      padding: 20px 40px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      background: rgba(11,11,15,0.6);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(232,230,225,0.06);
+      background: transparent;
+      border-bottom: none;
     }
 
     .logo {
@@ -134,6 +132,7 @@
       font-weight: 300;
       position: relative;
       padding-bottom: 4px;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.8);
     }
 
     .menu a::after {
@@ -158,6 +157,7 @@
       align-items: center;
       justify-content: center;
       position: relative;
+      z-index: 1;
       text-align: center;
       padding: 120px 24px 80px;
     }
@@ -210,6 +210,7 @@
     .about {
       padding: 120px 0;
       position: relative;
+      z-index: 1;
     }
 
     .about-inner {
@@ -274,6 +275,7 @@
     .gallery {
       padding: 100px 0 120px;
       position: relative;
+      z-index: 1;
     }
 
     .section-head {
@@ -397,6 +399,7 @@
       padding: 100px 0 120px;
       text-align: center;
       position: relative;
+      z-index: 1;
       border-top: 1px solid rgba(232,230,225,0.06);
       background: rgba(255,255,255,0.02);
       backdrop-filter: blur(8px);
@@ -492,7 +495,6 @@
   <div class="ambient" id="ambient"></div>
 
   <header>
-    <a href="#" class="logo">Дарь<span>я</span></a>
     <nav class="menu">
       <a href="#about">Обо мне</a>
       <a href="#gallery">Галерея</a>
